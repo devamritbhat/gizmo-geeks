@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+* {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --maroon: #320707;
+    --pink: #FFD1D1;
+    --rose: #FF8B8B;
+}
+
+#scroll-indicator {
+    height: 1.5vh;
+    background-color: var(--rose);
+    width: 0%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--pink);
+    overflow-x: hidden;
+}
+
+#header {
+    color: var(--maroon);
+    letter-spacing: 1px;
+    font-family: "Righteous", cursive;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+#first {
+    height: 80vh;
+    background-color: var(--maroon);
+    border-radius: 24px;
+}
+
+footer {
+    background-color: var(--maroon);
+    border-radius: 24px;
+}
+
+i {
+    color: var(--pink);
+}
+
+#gg{
+    color: var(--pink);
+}
+
+.typewriter > span {
+    color: var(--pink);
+    overflow: hidden;
+    border-right: .15em solid white;
+    animation: blink-caret 1s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: white;
+    }
+}
+
+#instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#github:hover {
+    color: #999999;
+}
+
+#youtube:hover {
+    color: #FF0000;
+}
+
+.hidden {
+    opacity: 0;
+    transition: all 2s ease-in-out;
+}
+
+.show {
+    opacity: 1;
+}
+
+@media(prefer-rediced-motion) {
+    .hidden {
+        transition: none;
+    }
+    .typewriter > span {
+        animation: none;
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+        border-radius: 64px;
+    }
+}
