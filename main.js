@@ -7,6 +7,10 @@ window.onscroll = function() {
         document.getElementById("scroll-indicator").style.borderTopRightRadius = "0";
         document.getElementById("scroll-indicator").style.borderBottomRightRadius = "0";
     }
+    else {
+        document.getElementById("scroll-indicator").style.borderTopRightRadius = "5px";
+        document.getElementById("scroll-indicator").style.borderBottomRightRadius = "5px";
+    }
     document.getElementById("scroll-indicator").style.width = scrolled + "%";
   }
   
@@ -29,7 +33,7 @@ window.onscroll = function() {
   hiddenElements.forEach((el) => observer.observe(el));
   
   var i = 0;
-  var txt = 'Made with ❤️ by Team Raman House';
+  var txt = 'Made with ❤️ by Raman House';
   
   function typeWriter() {
     if (i < txt.length) {
@@ -38,4 +42,3 @@ window.onscroll = function() {
       setTimeout(typeWriter, 75);
     }
   }
-  
