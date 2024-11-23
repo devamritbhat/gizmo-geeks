@@ -25,7 +25,7 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 var i = 0;
-var txt = 'Made with ❤️ by Devamrit <33';
+var txt = 'Made with ❤️ by Devamrit';
 
 function typeWriter() {
   if (i < txt.length) {
@@ -33,8 +33,4 @@ function typeWriter() {
     i++;
     setTimeout(typeWriter, 75);
   }
-}
-
-function websiteVisits(response) {
-  document.querySelector("#views").textContent = response.value + " views";
 }
